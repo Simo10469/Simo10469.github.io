@@ -1,14 +1,62 @@
-def inizia_gioco():
-    print("Benvenuto nel gioco!")
-    nome = input("Come ti chiami? ")
-    print(f"Ciao {nome}! Sei pronto per l'avventura?")
-    scelta = input("Vai a sinistra o destra? (sinistra/destra): ")
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco di Clic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .game-container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Gioco di Clic</h1>
+        <p>Vinci cliccando il bottone!</p>
+        <button id="gameButton" onclick="winGame()">Cliccami!</button>
+        <p id="winMessage" class="hidden">Hai vinto! 🎉</p>
+    </div>
 
-    if scelta == "sinistra":
-        print("Hai trovato un tesoro!")
-    elif scelta == "destra":
-        print("Oh no, sei stato mangiato da un drago!")
-    else:
-        print("Scelta non valida!")
-
-inizia_gioco()
+    <script>
+        function winGame() {
+            // Nasconde il bottone e mostra il messaggio di vittoria
+            document.getElementById("gameButton").classList.add("hidden");
+            document.getElementById("winMessage").classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
