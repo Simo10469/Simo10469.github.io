@@ -1,0 +1,14 @@
+def inizia_gioco():
+    print("Benvenuto nel gioco!")
+    nome = input("Come ti chiami? ")
+    print(f"Ciao {nome}! Sei pronto per l'avventura?")
+    scelta = input("Vai a sinistra o destra? (sinistra/destra): ")
+
+    if scelta == "sinistra":
+        print("Hai trovato un tesoro!")
+    elif scelta == "destra":
+        print("Oh no, sei stato mangiato da un drago!")
+    else:
+        print("Scelta non valida!")
+
+inizia_gioco()
