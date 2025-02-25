@@ -3,88 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitoli di Informatica</title>
-    <!-- Aggiungi un foglio di stile esterno per migliorare la grafica -->
-    <link rel="stylesheet" href="style.css">
+    <title>Consegna Informatica - Approfondimenti</title>
+    <link rel="stylesheet" href="style.css"> <!-- File CSS per lo stile -->
 </head>
 <body>
 
 <header>
-    <h1>Consegna Informatica - Capitoli e Approfondimenti</h1>
+    <h1>Consegna Informatica - Approfondimenti e Capitoli</h1>
+    <!-- Aggiunta della copertina dell'immagine -->
+    <div class="cover-image">
+        <img src="cover.jpg" alt="Copertina del corso di informatica" style="width: 100%; height: auto;">
+    </div>
     <nav>
         <ul>
-            <li><a href="#capitolo1">Capitolo 1</a></li>
-            <li><a href="#capitolo2">Capitolo 2</a></li>
-            <li><a href="#capitolo3">Capitolo 3</a></li>
-            <li><a href="#capitolo4">Capitolo 4</a></li>
-            <li><a href="#capitolo5">Capitolo 5</a></li>
+            <li><a href="#capitolo1">Capitolo 1: Algoritmi</a></li>
+            <li><a href="#capitolo2">Capitolo 2: Programmazione</a></li>
+            <li><a href="#capitolo3">Capitolo 3: Strutture Dati</a></li>
+            <li><a href="#capitolo4">Capitolo 4: Algoritmi e Programmazione</a></li>
+            <li><a href="#capitolo5">Capitolo 5: Le Reti</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
 
-    <!-- Capitolo 1: Introduzione agli algoritmi -->
+    <!-- Capitolo 1: Introduzione agli Algoritmi -->
     <section id="capitolo1">
-        <h2>Capitolo 1: Introduzione agli algoritmi</h2>
-        <p>Qui vengono trattati i concetti fondamentali degli algoritmi, come la loro definizione e applicazioni pratiche. Un algoritmo è una sequenza di operazioni finite che risolvono un problema.</p>
-        <figure>
-            <img src="algoritmo.jpg" alt="Schema di un algoritmo">
-            <figcaption>Esempio di un algoritmo di ricerca</figcaption>
-        </figure>
+        <h2>Capitolo 1: Introduzione agli Algoritmi</h2>
+        <p>Un algoritmo è una sequenza finita di istruzioni che risolvono un problema specifico. Ogni algoritmo deve essere preciso, efficiente e deterministico.</p>
+        
+        <h3>Proprietà degli Algoritmi</h3>
+        <ul>
+            <li><strong>Finitudine</strong>: Un algoritmo deve terminare dopo un numero finito di passi.</li>
+            <li><strong>Definiteness</strong>: Ogni passo deve essere ben definito e comprensibile.</li>
+            <li><strong>Efficacia</strong>: Ogni operazione deve essere semplice da eseguire e comprensibile per la macchina.</li>
+            <li><strong>Involuzione</strong>: Ogni passo deve essere utile per arrivare alla soluzione del problema.</li>
+        </ul>
+
+        <h3>Algoritmi Esempio - Ordinamento (Bubble Sort)</h3>
+        <p>Il **Bubble Sort** è un algoritmo di ordinamento che confronta coppie di elementi adiacenti e li scambia se non sono nell'ordine corretto. Viene ripetuto finché l'intera lista non è ordinata.</p>
+        <pre>
+            <code>
+                procedure BubbleSort(list)
+                    n = length(list)
+                    for i = 1 to n-1
+                        for j = 0 to n-i-1
+                            if list[j] > list[j+1]
+                                swap(list[j], list[j+1])
+            </code>
+        </pre>
+
+        <p>In un linguaggio di programmazione come **Python**, il Bubble Sort potrebbe apparire come segue:</p>
+        <pre>
+            <code>
+                def bubble_sort(arr):
+                    n = len(arr)
+                    for i in range(n):
+                        for j in range(0, n-i-1):
+                            if arr[j] > arr[j+1]:
+                                arr[j], arr[j+1] = arr[j+1], arr[j]
+                    return arr
+
+                print(bubble_sort([64, 34, 25, 12, 22, 11, 90]))
+            </code>
+        </pre>
+        <p>Questo codice ordina una lista di numeri utilizzando l'algoritmo di ordinamento Bubble Sort.</p>
     </section>
 
-    <!-- Capitolo 2: Programmazione e linguaggi -->
+    <!-- Capitolo 2: Programmazione e Linguaggi -->
     <section id="capitolo2">
-        <h2>Capitolo 2: Programmazione e linguaggi</h2>
-        <p>In questo capitolo esploreremo i principali linguaggi di programmazione utilizzati per lo sviluppo di applicazioni e il loro ruolo nella progettazione di soluzioni informatiche.</p>
+        <h2>Capitolo 2: Programmazione e Linguaggi</h2>
+        <p>La programmazione è il processo di scrittura di algoritmi tramite un linguaggio di programmazione. I linguaggi di programmazione consentono agli sviluppatori di comunicare con i computer in modo che possano eseguire istruzioni specifiche.</p>
+
+        <h3>Linguaggi di Programmazione</h3>
+        <ul>
+            <li><strong>Linguaggi di basso livello</strong>: Come l'**Assembly**, che sono più vicini al linguaggio macchina. Esempio: <strong>Assembly x86</strong> (usato per interagire direttamente con l'hardware).</li>
+            <li><strong>Linguaggi di alto livello</strong>: Come **Python**, **Java**, **C++**, che sono più facili da leggere e scrivere, poiché utilizzano una sintassi comprensibile all'uomo.</li>
+            <li><strong>Compilatori vs Interpreti</strong>:
+                <ul>
+                    <li><strong>Compilatori</strong>: Traducono il codice sorgente in codice macchina tutto in una volta, producendo un programma eseguibile.</li>
+                    <li><strong>Interpreti</strong>: Eseguono il codice sorgente riga per riga senza generare un file eseguibile separato.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Esempio di Codice in Python</h3>
+        <p>Di seguito un semplice esempio di programma in **Python** che calcola l'area di un cerchio dato il raggio:</p>
+        <pre>
+            <code>
+                def calcola_area_cerchio(radius):
+                    pi = 3.14159
+                    return pi * radius * radius
+
+                raggio = 5
+                print(f"L'area del cerchio con raggio {raggio} è {calcola_area_cerchio(raggio)}")
+            </code>
+        </pre>
     </section>
 
     <!-- Capitolo 3: Strutture Dati -->
     <section id="capitolo3">
         <h2>Capitolo 3: Strutture Dati</h2>
-        <p>Le strutture dati sono modalità di organizzazione dei dati. In questo capitolo verranno analizzati gli array, le liste, le code e le pile.</p>
+        <p>Le strutture dati sono modalità per organizzare e memorizzare i dati in modo che possano essere usati più efficientemente. Ogni struttura ha vantaggi e svantaggi a seconda del contesto di utilizzo.</p>
+        
+        <h3>Tipi di Strutture Dati</h3>
+        <ul>
+            <li><strong>Array</strong>: Una sequenza di elementi dello stesso tipo. Gli array sono efficaci quando si vogliono accedere velocemente agli elementi tramite indice.</li>
+            <li><strong>Liste</strong>: Una sequenza di dati che può crescere o diminuire dinamicamente. Le liste sono usate quando si prevede una grande varietà nel numero di elementi.</li>
+            <li><strong>Pile (Stack)</strong>: Struttura dati basata sul principio **LIFO** (Last In, First Out). L'elemento inserito per ultimo è il primo a essere rimosso.</li>
+            <li><strong>Code (Queue)</strong>: Struttura dati basata sul principio **FIFO** (First In, First Out). L'elemento inserito per primo è il primo a essere rimosso.</li>
+            <li><strong>Alberi</strong>: Strutture dati gerarchiche in cui ogni nodo ha un valore e dei figli. Usato per rappresentare gerarchie o strutture ad albero.</li>
+        </ul>
+
+        <h3>Codice Esempio di Pila (Stack) in Python</h3>
+        <pre>
+            <code>
+                class Stack:
+                    def __init__(self):
+                        self.items = []
+
+                    def is_empty(self):
+                        return len(self.items) == 0
+
+                    def push(self, item):
+                        self.items.append(item)
+
+                    def pop(self):
+                        if not self.is_empty():
+                            return self.items.pop()
+
+                # Creazione di una pila e operazioni
+                stack = Stack()
+                stack.push(10)
+                stack.push(20)
+                print(f"Elemento rimosso: {stack.pop()}")  # Stampa 20
+            </code>
+        </pre>
     </section>
 
     <!-- Capitolo 4: Algoritmi e Programmazione -->
     <section id="capitolo4">
         <h2>Capitolo 4: Algoritmi e Programmazione</h2>
-        <p>Approfondiamo il concetto di algoritmi e programmazione con esempi pratici. I flowchart sono strumenti utili per visualizzare il flusso di un algoritmo.</p>
+        <p>In questo capitolo esploreremo come visualizzare algoritmi complessi tramite diagrammi di flusso (Flowcharts) e come implementare gli algoritmi in linguaggi di programmazione.</p>
 
-        <!-- Esempio di Flowchart -->
+        <h3>Flowchart: Diagramma di Flusso</h3>
+        <p>I flowchart sono diagrammi che rappresentano graficamente un algoritmo. Ogni passo è rappresentato da un simbolo diverso (es. rettangolo per operazioni, rombo per decisioni).</p>
+        
+        <h4>Esempio di Flowchart - Determinare se un numero è pari o dispari</h4>
+        <p>In un flowchart, il processo per determinare se un numero è pari o dispari può essere rappresentato come segue:</p>
         <figure>
-            <img src="flowchart.png" alt="Esempio di Flowchart">
-            <figcaption>Flowchart per il calcolo di un numero primo</figcaption>
+            <img src="flowchart_pari_dispari.png" alt="Flowchart per determinare se un numero è pari o dispari">
+            <figcaption>Diagramma di flusso per determinare se un numero è pari o dispari</figcaption>
         </figure>
+
+        <h3>Codice Esempio in Python</h3>
+        <pre>
+            <code>
+                def verifica_pari_dispari(numero):
+                    if numero % 2 == 0:
+                        return "Pari"
+                    else:
+                        return "Dispari"
+
+                print(verifica_pari_dispari(4))  # Stampa "Pari"
+            </code>
+        </pre>
     </section>
 
     <!-- Capitolo 5: Le Reti -->
     <section id="capitolo5">
         <h2>Capitolo 5: Le Reti</h2>
-        
-        <!-- PAN -->
-        <article>
-            <h3>PAN (Personal Area Network)</h3>
-            <p>Un PAN è una rete che collega dispositivi in un'area molto ristretta, come ad esempio la connessione tra un telefono e un computer tramite Bluetooth.</p>
-        </article>
-        
-        <!-- LAN -->
-        <article>
-            <h3>LAN (Local Area Network)</h3>
-            <p>Una LAN è una rete che copre una piccola area geografica, come un ufficio o una scuola. Le LAN utilizzano tipicamente tecnologie Ethernet o Wi-Fi.</p>
-        </article>
-        
-        <!-- WAN -->
-        <article>
-            <h3>WAN (Wide Area Network)</h3>
-            <p>Le WAN coprono aree geografiche ampie, come interi paesi o continenti. Internet è un esempio di WAN.</p>
-        </article>
+        <p>Le reti informatiche sono sistemi di computer e dispositivi connessi tra loro per scambiarsi dati e risorse. Esistono diversi tipi di reti, ciascuna con caratteristiche uniche in base alla sua estensione e utilizzo.</p>
 
-        <!-- Internet -->
-        <article>
-            <h3>Internet</h3>
-            <p>Internet è una rete globale di computer interconnessi. Offre una vasta gamma di servizi come la navigazione web, posta elettronica e social media.</p>
-        </article>
+        <h3>PAN (Personal Area Network)</h3>
+        <p>Una **PAN** è una rete che connette dispositivi in un'area ristretta, come il tuo smartphone, il computer e una stampante tramite Bluetooth o Wi-Fi.</p>
+
+        <h3>LAN (Local Area Network)</h3>
+        <p>Una **LAN** è una rete che copre un'area geografica limitata, come una casa o un ufficio. Essa connette computer e altri dispositivi tramite cavi Ethernet o Wi-Fi.</p>
+
+        <h3>WAN (Wide Area Network)</h3>
+        <p>Una **WAN** è una rete che copre una vasta area geografica, come una città, una nazione o il mondo intero. **Internet** è un esempio di WAN.</p>
+
+        <h3>Internet</h3>
+        <p>**Internet** è una rete globale che collega milioni di computer e dispositivi, permettendo di scambiare informazioni, utilizzare applicazioni web e accedere a risorse remote.</p>
     </section>
 
 </main>
