@@ -8,29 +8,29 @@
         /* Stile di base per la pagina */
         body {
             font-family: Arial, sans-serif;
+            background-color: #fafafa;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
             color: #333;
         }
 
         /* Header */
         header {
-            background-color: #003366;
+            background-color: #4CAF50;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
 
         header h1 {
+            font-size: 2em;
             margin: 0;
-            font-size: 2.5em;
-            color: #FFD700; /* Titolo in oro */
         }
 
         header nav ul {
             list-style-type: none;
             padding: 0;
+            margin-top: 10px;
         }
 
         header nav ul li {
@@ -42,17 +42,17 @@
             color: white;
             text-decoration: none;
             font-size: 1.2em;
-            text-transform: uppercase;
         }
 
         header nav ul li a:hover {
             text-decoration: underline;
-            color: #FFD700;
         }
 
         /* Sezione di copertura immagine */
-        .cover-image {
-            margin: 20px 0;
+        .cover-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
 
         /* Sezioni principali */
@@ -61,29 +61,23 @@
             margin: 20px;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Titoli delle sezioni */
         section h2 {
-            color: #003366;
-            font-size: 2em;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Ombra leggera sul titolo */
-        }
-
-        /* Sottotitoli (h3) con colori distinti */
-        section h3 {
-            color: #FF6347; /* Rosso corallo per i sottotitoli */
-            font-size: 1.5em;
-            border-bottom: 2px solid #FF6347;
+            font-size: 1.8em;
+            color: #2E8B57; /* Verde scuro */
+            border-bottom: 2px solid #2E8B57;
             padding-bottom: 5px;
+            margin-bottom: 20px;
         }
 
-        section h4 {
-            color: #32CD32; /* Verde lime per i titoli dei sotto-paragrafi */
+        section h3 {
+            font-size: 1.4em;
+            color: #FF6347; /* Rosso corallo */
         }
 
-        /* Testo di paragrafi */
         section p {
             font-size: 1.1em;
             line-height: 1.6;
@@ -92,71 +86,39 @@
 
         section ul {
             margin-left: 20px;
-            list-style-type: square;
+            list-style-type: disc;
         }
 
         section ul li {
             margin-bottom: 10px;
-            font-size: 1.1em;
         }
 
         section pre {
             background-color: #f1f1f1;
             padding: 15px;
             border-radius: 8px;
-            overflow-x: auto;
             font-size: 1em;
-            border-left: 5px solid #003366;
+            border-left: 5px solid #4CAF50;
+            overflow-x: auto;
         }
 
         /* Footer */
         footer {
-            background-color: #003366;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 15px 0;
+            padding: 10px;
             margin-top: 20px;
         }
 
-        footer p {
-            margin: 0;
-        }
-
-        /* Stili per il background delle sezioni */
-        #capitolo1 {
-            background-color: #e0f7fa; /* Azzurro chiaro */
-        }
-
-        #capitolo2 {
-            background-color: #ffebee; /* Rosa chiaro */
-        }
-
-        #capitolo3 {
-            background-color: #fff3e0; /* Giallo chiaro */
-        }
-
-        #capitolo4 {
-            background-color: #f0f4c3; /* Verde chiaro */
-        }
-
-        #capitolo5 {
-            background-color: #fff9c4; /* Giallo pallido */
-        }
-
-        /* Effetto hover per le sezioni */
-        section:hover {
-            transform: scale(1.02);
-            transition: 0.3s;
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Consegna Informatica - Approfondimenti e Capitoli</h1>
-    <!-- Aggiunta della copertina dell'immagine -->
+    <h1>Consegna Informatica - Approfondimenti</h1>
     <div class="cover-image">
-        <img src="cover.jpg" alt="Copertina del corso di informatica" style="width: 100%; height: auto; border-radius: 10px;">
+        <img src="cover.jpg" alt="Copertina del corso di informatica">
     </div>
     <nav>
         <ul>
@@ -184,8 +146,8 @@
             <li><strong>Involuzione</strong>: Ogni passo deve essere utile per arrivare alla soluzione del problema.</li>
         </ul>
 
-        <h3>Algoritmi Esempio - Ordinamento (Bubble Sort)</h3>
-        <p>Il **Bubble Sort** è un algoritmo di ordinamento che confronta coppie di elementi adiacenti e li scambia se non sono nell'ordine corretto. Viene ripetuto finché l'intera lista non è ordinata.</p>
+        <h3>Algoritmo di Ordinamento (Bubble Sort)</h3>
+        <p>Il **Bubble Sort** è un algoritmo di ordinamento che confronta coppie di elementi adiacenti e li scambia se non sono nell'ordine corretto. Questo processo viene ripetuto finché l'intera lista non è ordinata.</p>
         <pre>
             <code>
                 procedure BubbleSort(list)
@@ -201,16 +163,16 @@
     <!-- Capitolo 2: Programmazione e Linguaggi -->
     <section id="capitolo2">
         <h2>Capitolo 2: Programmazione e Linguaggi</h2>
-        <p>La programmazione è il processo di scrittura di algoritmi tramite un linguaggio di programmazione. I linguaggi di programmazione consentono agli sviluppatori di comunicare con i computer in modo che possano eseguire istruzioni specifiche.</p>
+        <p>La programmazione è il processo di scrittura di algoritmi tramite un linguaggio di programmazione. I linguaggi di programmazione consentono agli sviluppatori di comunicare con i computer per eseguire istruzioni specifiche.</p>
 
         <h3>Linguaggi di Programmazione</h3>
         <ul>
-            <li><strong>Linguaggi di basso livello</strong>: Come l'**Assembly**, che sono più vicini al linguaggio macchina. Esempio: <strong>Assembly x86</strong> (usato per interagire direttamente con l'hardware).</li>
-            <li><strong>Linguaggi di alto livello</strong>: Come **Python**, **Java**, **C++**, che sono più facili da leggere e scrivere, poiché utilizzano una sintassi comprensibile all'uomo.</li>
+            <li><strong>Linguaggi di basso livello</strong>: Come l'**Assembly**, che sono più vicini al linguaggio macchina. Esempio: **Assembly x86**.</li>
+            <li><strong>Linguaggi di alto livello</strong>: Come **Python**, **Java**, **C++**, che sono più facili da leggere e scrivere, utilizzando una sintassi comprensibile per l'uomo.</li>
             <li><strong>Compilatori vs Interpreti</strong>:
                 <ul>
-                    <li><strong>Compilatori</strong>: Traducono il codice sorgente in codice macchina tutto in una volta, producendo un programma eseguibile.</li>
-                    <li><strong>Interpreti</strong>: Eseguono il codice sorgente riga per riga senza generare un file eseguibile separato.</li>
+                    <li><strong>Compilatori</strong>: Traducono il codice sorgente in codice macchina prima dell'esecuzione.</li>
+                    <li><strong>Interpreti</strong>: Eseguono il codice sorgente riga per riga senza produrre un file eseguibile separato.</li>
                 </ul>
             </li>
         </ul>
@@ -231,15 +193,14 @@
     <!-- Capitolo 3: Strutture Dati -->
     <section id="capitolo3">
         <h2>Capitolo 3: Strutture Dati</h2>
-        <p>Le strutture dati sono modalità per organizzare e memorizzare i dati in modo che possano essere usati più efficientemente. Ogni struttura ha vantaggi e svantaggi a seconda del contesto di utilizzo.</p>
+        <p>Le strutture dati sono metodi per organizzare e memorizzare i dati in modo che possano essere utilizzati più facilmente ed efficientemente.</p>
         
         <h3>Tipi di Strutture Dati</h3>
         <ul>
-            <li><strong>Array</strong>: Una sequenza di elementi dello stesso tipo. Gli array sono efficaci quando si vogliono accedere velocemente agli elementi tramite indice.</li>
-            <li><strong>Liste</strong>: Una sequenza di dati che può crescere o diminuire dinamicamente. Le liste sono usate quando si prevede una grande varietà nel numero di elementi.</li>
-            <li><strong>Pile (Stack)</strong>: Struttura dati basata sul principio **LIFO** (Last In, First Out). L'elemento inserito per ultimo è il primo a essere rimosso.</li>
-            <li><strong>Code (Queue)</strong>: Struttura dati basata sul principio **FIFO** (First In, First Out). L'elemento inserito per primo è il primo a essere rimosso.</li>
-            <li><strong>Alberi</strong>: Strutture dati gerarchiche in cui ogni nodo ha un valore e dei figli. Usato per rappresentare gerarchie o strutture ad albero.</li>
+            <li><strong>Array</strong>: Una sequenza di elementi dello stesso tipo. Utilizzato per l'accesso rapido tramite indice.</li>
+            <li><strong>Liste</strong>: Una sequenza di dati che può crescere o diminuire dinamicamente. Utilizzata quando il numero di elementi è variabile.</li>
+            <li><strong>Pile (Stack)</strong>: Struttura dati che segue il principio **LIFO** (Last In, First Out).</li>
+            <li><strong>Code (Queue)</strong>: Struttura dati che segue il principio **FIFO** (First In, First Out).</li>
         </ul>
 
         <h3>Codice Esempio di Pila (Stack) in Python</h3>
@@ -259,7 +220,7 @@
                         if not self.is_empty():
                             return self.items.pop()
 
-                # Creazione di una pila e operazioni
+                # Esempio di utilizzo della Pila
                 stack = Stack()
                 stack.push(10)
                 stack.push(20)
@@ -271,13 +232,13 @@
     <!-- Capitolo 4: Algoritmi e Programmazione -->
     <section id="capitolo4">
         <h2>Capitolo 4: Algoritmi e Programmazione</h2>
-        <p>In questo capitolo esploreremo come visualizzare algoritmi complessi tramite diagrammi di flusso (Flowcharts) e come implementare gli algoritmi in linguaggi di programmazione.</p>
+        <p>In questo capitolo esploreremo come rappresentare e implementare gli algoritmi, compreso l'uso dei diagrammi di flusso (Flowcharts) per visualizzare il processo di un algoritmo.</p>
 
         <h3>Flowchart: Diagramma di Flusso</h3>
-        <p>I flowchart sono diagrammi che rappresentano graficamente un algoritmo. Ogni passo è rappresentato da un simbolo diverso (es. rettangolo per operazioni, rombo per decisioni).</p>
-        
-        <h4>Esempio di Flowchart - Determinare se un numero è pari o dispari</h4>
-        <p>In un flowchart, il processo per determinare se un numero è pari o dispari può essere rappresentato come segue:</p>
+        <p>Il diagramma di flusso rappresenta graficamente i passaggi di un algoritmo, dove ogni passo è rappresentato da simboli distinti (ad esempio, un rombo per le decisioni).</p>
+
+        <h4>Esempio di Flowchart</h4>
+        <p>Ecco un esempio di un diagramma di flusso per determinare se un numero è pari o dispari:</p>
         <figure>
             <img src="flowchart_pari_dispari.png" alt="Flowchart per determinare se un numero è pari o dispari">
             <figcaption>Diagramma di flusso per determinare se un numero è pari o dispari</figcaption>
@@ -300,19 +261,19 @@
     <!-- Capitolo 5: Le Reti -->
     <section id="capitolo5">
         <h2>Capitolo 5: Le Reti</h2>
-        <p>Le reti informatiche sono sistemi di computer e dispositivi connessi tra loro per scambiarsi dati e risorse. Esistono diversi tipi di reti, ciascuna con caratteristiche uniche in base alla sua estensione e utilizzo.</p>
+        <p>Le reti informatiche permettono di connettere computer e dispositivi per scambiare dati e risorse. Esistono diversi tipi di reti, ciascuna con caratteristiche uniche.</p>
 
         <h3>PAN (Personal Area Network)</h3>
-        <p>Una **PAN** è una rete che connette dispositivi in un'area ristretta, come il tuo smartphone, il computer e una stampante tramite Bluetooth o Wi-Fi.</p>
+        <p>Una **PAN** è una rete di piccole dimensioni che connette dispositivi come smartphone e computer all'interno di un'area limitata (ad esempio, in una stanza).</p>
 
         <h3>LAN (Local Area Network)</h3>
-        <p>Una **LAN** è una rete che copre un'area geografica limitata, come una casa o un ufficio. Essa connette computer e altri dispositivi tramite cavi Ethernet o Wi-Fi.</p>
+        <p>Una **LAN** è una rete che copre un'area geografica limitata, come una casa o un ufficio. Connetti dispositivi tramite Wi-Fi o cavi Ethernet.</p>
 
         <h3>WAN (Wide Area Network)</h3>
-        <p>Una **WAN** è una rete che copre una vasta area geografica, come una città, una nazione o il mondo intero. **Internet** è un esempio di WAN.</p>
+        <p>Una **WAN** è una rete che copre aree geografiche più grandi, come città, paesi o il mondo intero. Internet è un esempio di WAN.</p>
 
         <h3>Internet</h3>
-        <p>**Internet** è una rete globale che collega milioni di computer e dispositivi, permettendo di scambiare informazioni, utilizzare applicazioni web e accedere a risorse remote.</p>
+        <p>**Internet** è una rete globale che collega milioni di dispositivi, consentendo la comunicazione e l'accesso a risorse remote.</p>
     </section>
 
 </main>
