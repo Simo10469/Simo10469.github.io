@@ -6,25 +6,56 @@
     <title>Informatica per Principianti</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #eef1f7;
             padding: 20px;
+            color: #333;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #333;
+        h1 {
+            text-align: center;
+            color: white;
+            background: linear-gradient(90deg, #0073e6, #00bfff);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: white;
+            background: linear-gradient(90deg, #005bb5, #0099cc);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        ul {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            border-left: 5px solid #0073e6;
+        }
+        ul li {
+            margin: 5px 0;
         }
         img {
             max-width: 100%;
             display: block;
-            margin: 10px 0;
+            margin: 15px auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #cc5500;
         }
     </style>
 </head>
@@ -37,56 +68,70 @@
             <li><a href="#software">Software</a></li>
             <li><a href="#sistema_operativo">Il Sistema Operativo</a></li>
             <li><a href="#internet">Internet</a></li>
-            <li><a href="#conclusione">Conclusione</a></li>
+            <li><a href="#programmazione">Programmazione</a></li>
+            <li><a href="#sicurezza">Sicurezza Informatica</a></li>
+            <li><a href="#cloud">Cloud Computing</a></li>
+            <li><a href="#dispositivi_mobili">Dispositivi Mobili</a></li>
         </ul>
         
-        <h2 id="informatica">Cos'è l'informatica?</h2>
-        <p>L'informatica è la scienza che studia i computer e come funzionano. Si occupa di hardware e software. Grazie all'informatica possiamo programmare, elaborare dati, sviluppare applicazioni e comunicare in tutto il mondo.</p>
-        <img src="informatica.jpg" alt="Immagine di un computer">
-        
-        <h2 id="hardware">Hardware</h2>
-        <p>L'hardware è la parte fisica del computer, come la tastiera, il mouse e il monitor. Esistono diversi tipi di hardware:</p>
+        <h2 id="programmazione">Programmazione</h2>
+        <p>La programmazione è l'arte di scrivere istruzioni per i computer per eseguire compiti specifici. Ogni programma è costituito da un insieme di istruzioni scritte in un linguaggio di programmazione.</p>
+        <p>Esistono molti linguaggi di programmazione, ognuno con i suoi utilizzi:</p>
         <ul>
-            <li><strong>CPU</strong>: il cervello del computer, che esegue le operazioni.</li>
-            <li><strong>RAM</strong>: la memoria temporanea che aiuta ad eseguire i programmi.</li>
-            <li><strong>Hard Disk</strong>: lo spazio di archiviazione permanente.</li>
-            <li><strong>Periferiche</strong>: dispositivi esterni come stampanti, scanner e altoparlanti.</li>
+            <li><strong>Python</strong>: Facile da imparare, utilizzato per lo sviluppo web, intelligenza artificiale, automazione e analisi dati.</li>
+            <li><strong>Java</strong>: Utilizzato per applicazioni aziendali, dispositivi Android e software complessi.</li>
+            <li><strong>C++</strong>: Potente e veloce, spesso usato per giochi, software di sistema e applicazioni ad alte prestazioni.</li>
+            <li><strong>JavaScript</strong>: Fondamentale per il web, permette di creare siti interattivi.</li>
         </ul>
-        <img src="hardware.jpg" alt="Componenti hardware di un computer">
+        <p>Un semplice esempio di codice in Python:</p>
+        <pre>
+            print("Ciao, mondo!")
+        </pre>
+        <img src="programmazione.jpg" alt="Scrittura di codice su un computer">
         
-        <h2 id="software">Software</h2>
-        <p>Il software è l'insieme dei programmi che fanno funzionare il computer. Esistono due principali categorie di software:</p>
+        <h2 id="sicurezza">Sicurezza Informatica</h2>
+        <p>La sicurezza informatica protegge i dati e i sistemi da attacchi e minacce. Gli hacker possono tentare di rubare informazioni personali, infettare dispositivi con malware o interrompere servizi online.</p>
+        <p>Consigli per rimanere sicuri online:</p>
         <ul>
-            <li><strong>Software di sistema</strong>: come il sistema operativo, che gestisce le risorse del computer.</li>
-            <li><strong>Software applicativo</strong>: programmi come browser, videogiochi e programmi di scrittura.</li>
+            <li>Utilizzare password lunghe e complesse, evitando combinazioni prevedibili come "123456".</li>
+            <li>Abilitare l'autenticazione a due fattori (2FA) per proteggere gli account online.</li>
+            <li>Non aprire email sospette o cliccare su link di provenienza incerta.</li>
+            <li>Usare software antivirus e mantenere aggiornati i programmi e il sistema operativo.</li>
         </ul>
-        <img src="software.jpg" alt="Esempio di software in uso">
-        
-        <h2 id="sistema_operativo">Il Sistema Operativo</h2>
-        <p>Il sistema operativo è il programma principale del computer. Alcuni esempi di sistemi operativi sono:</p>
+        <p>Tipologie di minacce informatiche:</p>
         <ul>
-            <li>Windows</li>
-            <li>MacOS</li>
-            <li>Linux</li>
-            <li>Android e iOS (per dispositivi mobili)</li>
+            <li><strong>Phishing</strong>: Email fraudolente che cercano di ingannare gli utenti per ottenere informazioni sensibili.</li>
+            <li><strong>Malware</strong>: Software dannoso come virus, trojan e ransomware.</li>
+            <li><strong>Attacchi DDoS</strong>: Tentativi di sovraccaricare un sito web con un enorme numero di richieste.</li>
         </ul>
-        <p>Il sistema operativo permette di eseguire applicazioni e gestire l'hardware.</p>
-        <img src="sistema_operativo.jpg" alt="Esempio di un sistema operativo">
+        <img src="sicurezza.jpg" alt="Concetto di sicurezza informatica">
         
-        <h2 id="internet">Internet</h2>
-        <p>Internet è una rete di computer collegati tra loro. Le principali attività che possiamo svolgere su Internet includono:</p>
+        <h2 id="cloud">Cloud Computing</h2>
+        <p>Il cloud computing permette di archiviare e elaborare dati su server remoti invece che su dispositivi locali. Questo offre flessibilità e accessibilità, riducendo la necessità di hardware costoso.</p>
+        <p>Esempi di utilizzo del cloud:</p>
         <ul>
-            <li>Navigare sui siti web.</li>
-            <li>Usare i social media.</li>
-            <li>Guardare video e ascoltare musica.</li>
-            <li>Inviare email e comunicare con altri utenti.</li>
-            <li>Fare acquisti online.</li>
+            <li>Archiviazione di file su Google Drive o Dropbox.</li>
+            <li>Utilizzo di applicazioni web come Google Docs o Microsoft 365.</li>
+            <li>Hosting di siti web e servizi su Amazon Web Services (AWS) o Microsoft Azure.</li>
         </ul>
-        <img src="internet.jpg" alt="Connessione a Internet">
+        <img src="cloud.jpg" alt="Concetto di cloud computing">
         
-        <h2 id="conclusione">Conclusione</h2>
-        <p>L'informatica è ovunque! Saperla usare è importante per la scuola, il lavoro e la vita di tutti i giorni. Conoscere il funzionamento di un computer e le sue applicazioni ci aiuta a essere più produttivi e a comunicare meglio.</p>
-        <img src="conclusione.jpg" alt="Persona che usa un computer">
+        <h2 id="dispositivi_mobili">Dispositivi Mobili</h2>
+        <p>I dispositivi mobili come smartphone e tablet sono diventati strumenti essenziali nella vita quotidiana. Essi permettono di comunicare, navigare su internet, lavorare e intrattenersi in mobilità.</p>
+        <p>Funzionalità principali:</p>
+        <ul>
+            <li>Comunicazione: Email, messaggistica istantanea (WhatsApp, Telegram) e social media.</li>
+            <li>Navigazione e GPS: Applicazioni come Google Maps aiutano a trovare percorsi.</li>
+            <li>Fotografia: Le fotocamere avanzate permettono di scattare foto e registrare video in alta qualità.</li>
+            <li>App per la produttività: Office, note digitali, strumenti per la gestione del tempo.</li>
+        </ul>
+        <p>Consigli per l'uso sicuro dei dispositivi mobili:</p>
+        <ul>
+            <li>Scaricare app solo da fonti ufficiali come Google Play Store o Apple App Store.</li>
+            <li>Mantenere sempre aggiornate le app e il sistema operativo.</li>
+            <li>Utilizzare una connessione Wi-Fi sicura ed evitare reti pubbliche non protette.</li>
+        </ul>
+        <img src="dispositivi_mobili.jpg" alt="Smartphone e tablet">
     </div>
 </body>
 </html>
