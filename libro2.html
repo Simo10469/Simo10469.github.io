@@ -3,227 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>libro di  informatica</title>
+    <title>Libro di Informatica</title>
     <style>
-        /* Stile di base per la pagina */
         body {
             font-family: Arial, sans-serif;
-            background-color: #fafafa;
-            margin: 0;
-            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
-        }
-
-        /* Header */
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2em;
             margin: 0;
+            padding: 20px;
         }
-
-        header nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 10px;
+        h1 {
+            font-size: 2em;
+            color: #222;
         }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
+        h2 {
+            font-size: 1.5em;
+            color: #444;
         }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
+        h3, p {
             font-size: 1.2em;
+            color: #555;
         }
-
-        header nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Sezione di copertura immagine */
-        .cover-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        /* Sezioni principali */
-        section {
-            background-color: white;
-            margin: 20px;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        /* Titoli delle sezioni */
-        section h2 {
-            font-size: 1.8em;
-            color: #2E8B57; /* Verde scuro */
-            border-bottom: 2px solid #2E8B57;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-
-        section h3 {
-            font-size: 1.4em;
-            color: #FF6347; /* Rosso corallo */
-        }
-
-        section p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        section ul {
-            margin-left: 20px;
-            list-style-type: disc;
-        }
-
-        section ul li {
-            margin-bottom: 10px;
-        }
-
-        section pre {
-            background-color: #f1f1f1;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 1em;
-            border-left: 5px solid #4CAF50;
-            overflow-x: auto;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Libro di Informatica</h1>
 
-<header>
-    <h1>Consegna Informatica - Approfondimenti</h1>
-    <div class="cover-image">
-        <img src="cover.jpg" alt="Copertina del corso di informatica">
+        <h2>Capitolo 1: Cos'è l'informatica</h2>
+        <h3>Definizione</h3>
+        <p>L'informatica è la scienza che studia la rappresentazione, l'elaborazione e la trasmissione delle informazioni...</p>
+
+        <h2>Capitolo 2: Componenti del computer</h2>
+        <h3>Hardware e Software</h3>
+        <p>Il computer è costituito da due componenti principali: hardware e software...</p>
+
+        <h2>Capitolo 3: Le codifiche</h2>
+        <h3>Codifica binaria</h3>
+        <p>Il sistema binario è alla base del funzionamento dei computer...</p>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#capitolo1">Capitolo 1: Algoritmi</a></li>
-            <li><a href="#capitolo2">Capitolo 2: Programmazione</a></li>
-            <li><a href="#capitolo3">Capitolo 3: Strutture Dati</a></li>
-            <li><a href="#capitolo4">Capitolo 4: Algoritmi e Programmazione</a></li>
-            <li><a href="#capitolo5">Capitolo 5: Le Reti</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-
-    <!-- Capitolo 1: Introduzione agli Algoritmi -->
-    <section id="capitolo1">
-        <h2>Capitolo 1: Introduzione agli Algoritmi</h2>
-        <p>Un algoritmo è una sequenza finita di istruzioni che risolvono un problema specifico. Ogni algoritmo deve essere preciso, efficiente e deterministico.</p>
-        
-        <h3>Proprietà degli Algoritmi</h3>
-        <ul>
-            <li><strong>Finitudine</strong>: Un algoritmo deve terminare dopo un numero finito di passi.</li>
-            <li><strong>Definiteness</strong>: Ogni passo deve essere ben definito e comprensibile.</li>
-            <li><strong>Efficacia</strong>: Ogni operazione deve essere semplice da eseguire e comprensibile per la macchina.</li>
-            <li><strong>Involuzione</strong>: Ogni passo deve essere utile per arrivare alla soluzione del problema.</li>
-        </ul>
-
-        <h3>Algoritmo di Ordinamento (Bubble Sort)</h3>
-        <p>Il **Bubble Sort** è un algoritmo di ordinamento che confronta coppie di elementi adiacenti e li scambia se non sono nell'ordine corretto. Questo processo viene ripetuto finché l'intera lista non è ordinata.</p>
-    
-    <!-- Capitolo 2: Programmazione e Linguaggi -->
-    <section id="capitolo2">
-        <h2>Capitolo 2: Programmazione e Linguaggi</h2>
-        <p>La programmazione è il processo di scrittura di algoritmi tramite un linguaggio di programmazione. I linguaggi di programmazione consentono agli sviluppatori di comunicare con i computer per eseguire istruzioni specifiche.</p>
-
-        <h3>Linguaggi di Programmazione</h3>
-        <ul>
-            <li><strong>Linguaggi di basso livello</strong>: Come l'**Assembly**, che sono più vicini al linguaggio macchina. Esempio: **Assembly x86**.</li>
-            <li><strong>Linguaggi di alto livello</strong>: Come **Python**, **Java**, **C++**, che sono più facili da leggere e scrivere, utilizzando una sintassi comprensibile per l'uomo.</li>
-            <li><strong>Compilatori vs Interpreti</strong>:
-                <ul>
-                    <li><strong>Compilatori</strong>: Traducono il codice sorgente in codice macchina prima dell'esecuzione.</li>
-                    <li><strong>Interpreti</strong>: Eseguono il codice sorgente riga per riga senza produrre un file eseguibile separato.</li>
-                </ul>
-            </li>
-        </ul>
-
-    
-
-    <!-- Capitolo 3: Strutture Dati -->
-    <section id="capitolo3">
-        <h2>Capitolo 3: Strutture Dati</h2>
-        <p>Le strutture dati sono metodi per organizzare e memorizzare i dati in modo che possano essere utilizzati più facilmente ed efficientemente.</p>
-        
-        <h3>Tipi di Strutture Dati</h3>
-        <ul>
-            <li><strong>Array</strong>: Una sequenza di elementi dello stesso tipo. Utilizzato per l'accesso rapido tramite indice.</li>
-            <li><strong>Liste</strong>: Una sequenza di dati che può crescere o diminuire dinamicamente. Utilizzata quando il numero di elementi è variabile.</li>
-            <li><strong>Pile (Stack)</strong>: Struttura dati che segue il principio **LIFO** (Last In, First Out).</li>
-            <li><strong>Code (Queue)</strong>: Struttura dati che segue il principio **FIFO** (First In, First Out).</li>
-        </ul>
-
-      
-    <!-- Capitolo 4: Algoritmi e Programmazione -->
-    <section id="capitolo4">
-        <h2>Capitolo 4: Algoritmi e Programmazione</h2>
-        <p>In questo capitolo esploreremo come rappresentare e implementare gli algoritmi, compreso l'uso dei diagrammi di flusso (Flowcharts) per visualizzare il processo di un algoritmo.</p>
-
-        <h3>Flowchart: Diagramma di Flusso</h3>
-        <p>Il diagramma di flusso rappresenta graficamente i passaggi di un algoritmo, dove ogni passo è rappresentato da simboli distinti (ad esempio, un rombo per le decisioni).</p>
-
-        <h4>Esempio di Flowchart</h4>
-        <p>Ecco un esempio di un diagramma di flusso per determinare se un numero è pari o dispari:</p>
-        <figure>
-            <img src="flowchart_pari_dispari.png" alt="Flowchart per determinare se un numero è pari o dispari">
-            <figcaption>Diagramma di flusso per determinare se un numero è pari o dispari</figcaption>
-        </figure>
-
-      
-
-   
-
-    <!-- Capitolo 5: Le Reti -->
-    <section id="capitolo5">
-        <h2>Capitolo 5: Le Reti</h2>
-        <p>Le reti informatiche permettono di connettere computer e dispositivi per scambiare dati e risorse. Esistono diversi tipi di reti, ciascuna con caratteristiche uniche.</p>
-
-        <h3>PAN (Personal Area Network)</h3>
-        <p>Una **PAN** è una rete di piccole dimensioni che connette dispositivi come smartphone e computer all'interno di un'area limitata (ad esempio, in una stanza).</p>
-
-        <h3>LAN (Local Area Network)</h3>
-        <p>Una **LAN** è una rete che copre un'area geografica limitata, come una casa o un ufficio. Connetti dispositivi tramite Wi-Fi o cavi Ethernet.</p>
-
-        <h3>WAN (Wide Area Network)</h3>
-        <p>Una **WAN** è una rete che copre aree geografiche più grandi, come città, paesi o il mondo intero. Internet è un esempio di WAN.</p>
-
-        <h3>Internet</h3>
-        <p>**Internet** è una rete globale che collega milioni di dispositivi, consentendo la comunicazione e l'accesso a risorse remote.</p>
-    </section>
-
-</main>
-
-<footer>
-   
-</footer>
-
 </body>
 </html>
